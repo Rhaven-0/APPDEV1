@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'my-profile';
+  colors = ['#FF5733', '#33FF57', '#3357FF', '#F3FF33', 'FF33F5', 
+  '33FFF5'];
+  currentColorIndex = signal(0);
+  currentColor = signal(this.colors[0]);
+
+  changeColor(){
+    //Calculating next indx of colors
+    const nextIndex = (this.currentColorIndex() + 1) %
+    this.colors.length;
+    this.currentColorIndex.set(nextIndex);
+    this.currentColor.set(this.colors[nextIndex]);
+    
+  }
 }

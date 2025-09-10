@@ -1,0 +1,100 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .color-display {
+    width: 200px;
+    height: 200px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .change-color-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .change-color-btn:hover {
+    background-color: #357abd;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-top: 15px;
+    color: #666;
+    font-size: 1.1rem;
+  }
+  .counter-container {
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 300px;
+    margin: 2rem auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .counter-value {
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: bold;
+  }
+  
+  .positive {
+    color: #2e7d32; /* Green for positive numbers */
+  }
+  
+  .negative {
+    color: #c62828; /* Red for negative numbers */
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-increment {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .btn-decrement {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+    
